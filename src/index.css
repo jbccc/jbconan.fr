@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Heming';
+    src: url('/Heming-Variable.ttf') format('truetype');
+    font-display: swap;
+}
+
+@layer base {
+    /* Theme transition for smooth switching */
+    *,
+    *::before,
+    *::after {
+        @apply transition-[background-color,border-color,color,box-shadow] duration-300 ease-in-out;
+    }
+
+    * {
+        @apply box-border m-0 p-0;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply font-heming text-primary-light dark:text-primary-dark bg-background-light dark:bg-background-dark leading-relaxed;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply my-4;
+    }
+
+    section {
+        @apply mb-8;
+    }
+
+    a {
+        @apply text-accent-light dark:text-accent-dark no-underline transition-colors duration-200;
+    }
+
+    a:hover {
+        @apply text-[#2a70c2];
+    }
+
+    img {
+        @apply max-w-full h-auto;
+    }
+}
+
+@layer components {
+    .app-container {
+        @apply px-[20%] min-h-screen flex flex-col;
+    }
+
+    .main-content {
+        @apply flex-1;
+    }
+
+    .phonetic {
+        @apply text-[0.5em] text-secondary-light dark:text-secondary-dark not-italic align-super;
+    }
+
+    /* Responsive padding for app container */
+    @media screen and (max-width: 1200px) {
+        .app-container {
+            @apply px-[15%];
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .app-container {
+            @apply px-[10%];
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .app-container {
+            @apply px-[5%];
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .app-container {
+            @apply px-4;
+        }
+    }
+}
