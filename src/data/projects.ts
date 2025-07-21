@@ -9,7 +9,7 @@ export const projectsData: ProjectsData = {
             "location": "Berkeley, CA",
             "projectType": "research",
             "domainTags": ["deep learning", "biostatistics", "interpretability", "causal inference"],
-            "techStack": ["Python", "PyTorch"],
+            "techStack": ["Python", "PyTorch", "Seaborn"],
             "startDate": "2024-11",
             "endDate": "2025-05",
             "company": {
@@ -28,7 +28,7 @@ export const projectsData: ProjectsData = {
             "location": "Remote",
             "projectType": "startup",
             "domainTags": ["startup", "ai", "saas", "web development"],
-            "techStack": ["React", "Node.js", "Stripe API"],
+            "techStack": ["React", "Stripe", "Django", "DRF"],
             "startDate": "2024-06",
             "endDate": "2024-12",
             "company": {
@@ -47,7 +47,7 @@ export const projectsData: ProjectsData = {
             "location": "Zürich, Switzerland",
             "projectType": "freelance",
             "domainTags": ["llm", "ai security", "prompt engineering", "finetuning"],
-            "techStack": ["Python"],
+            "techStack": ["Python", "OpenAI sdk", "Langchain"],
             "startDate": "2024-03",
             "endDate": "2024-08",
             "company": {
@@ -64,7 +64,7 @@ export const projectsData: ProjectsData = {
             "location": "Zürich, Switzerland",
             "projectType": "internship",
             "domainTags": ["genai", "pharma", "llm", "consulting"],
-            "techStack": ["Python"],
+            "techStack": ["Python", "Streamlit"],
             "startDate": "2023-06",
             "endDate": "2023-09",
             "company": {
@@ -98,7 +98,7 @@ export const projectsData: ProjectsData = {
             "location": "Lausanne, Switzerland",
             "projectType": "pro-bono",
             "domainTags": ["web development", "ui/ux"],
-            "techStack": ["JavaScript", "HTML", "CSS"],
+            "techStack": ["Vue", "Nuxt"],
             "startDate": "2023-01",
             "endDate": "2023-05",
             "company": {
@@ -116,7 +116,7 @@ export const projectsData: ProjectsData = {
             "location": "Lausanne, Switzerland",
             "projectType": "freelance",
             "domainTags": ["web development", "nlp", "automation", "lead generation"],
-            "techStack": ["Python", "Flask", "NLTK"],
+            "techStack": ["Python", "Django", "NLTK"],
             "startDate": "2022-10",
             "endDate": "2023-01",
             "links": {},
@@ -128,7 +128,7 @@ export const projectsData: ProjectsData = {
             "location": "Personal Lab",
             "projectType": "personal",
             "domainTags": ["self-hosting", "llm", "infrastructure", "ARM", "edge computing"],
-            "techStack": ["Linux", "Docker", "Python", "FastAPI"],
+            "techStack": ["Linux", "Docker", "Python", "FastAPI", "rkllm"],
             "startDate": "2023-12",
             "endDate": "Present",
             "links": {},
@@ -157,7 +157,7 @@ export const projectsData: ProjectsData = {
             "location": "Zürich, Switzerland",
             "projectType": "research",
             "domainTags": ["algebraic topology", "machine learning", "algorithms"],
-            "techStack": ["Python", "TopoModelX", "TopoNetX"],
+            "techStack": ["PyTorch", "TopoModelX", "TopoNetX"],
             "startDate": "2023-09",
             "endDate": "2024-01",
             "company": {
@@ -176,7 +176,7 @@ export const projectsData: ProjectsData = {
             "location": "Zürich, Switzerland",
             "projectType": "research",
             "domainTags": ["deep learning", "audio processing", "generative models"],
-            "techStack": ["Python", "PyTorch"],
+            "techStack": ["Python", "PyTorch", "cuda"],
             "startDate": "2023-02",
             "endDate": "2023-06",
             "company": {
@@ -194,7 +194,7 @@ export const projectsData: ProjectsData = {
             "location": "Zurich, Switzerland",
             "projectType": "startup",
             "domainTags": ["tech", "software engineering"],
-            "techStack": ["TypeScript", "Electron", "LaTeX"],
+            "techStack": ["Vue", "TypeScript", "Electron", "LaTeX"],
             "startDate": "2022-09",
             "endDate": "2023-03",
             "company": {
@@ -208,7 +208,9 @@ export const projectsData: ProjectsData = {
             "location": "Lausanne, Switzerland",
             "projectType": "pro-bono",
             "domainTags": ["management", "hr", "recruitment", "leadership", "it"],
-            "techStack": ["MS Office", "G Suite"],
+            "techStack": ["automation", "infra"],
+            "startDate": "06-2022",
+            "endDate": "06-2023",
             "links": {
                 "external": "https://je.epfl.ch"
             },
@@ -221,6 +223,8 @@ export const projectsData: ProjectsData = {
             "projectType": "pro-bono",
             "domainTags": ["project management", "consulting", "client relations", "sales"],
             "techStack": [],
+            "startDate": "2020",
+            "endDate": "2022",
             "links": {
                 "external": "https://je.epfl.ch"
             },
@@ -252,8 +256,8 @@ export const projectsData: ProjectsData = {
             "projectType": "community",
             "domainTags": ["social media", "community management", "content creation"],
             "techStack": ["Instagram"],
-            "startDate": "2020-03",
-            "endDate": "2022-06",
+            "startDate": "2018",
+            "endDate": "2022",
             "company": {
                 "name": "EPFL",
                 "website": "https://epfl.ch"
@@ -268,13 +272,24 @@ export const projectsData: ProjectsData = {
             "projectType": "award",
             "domainTags": ["mathematics", "competition"],
             "techStack": [],
-            "startDate": "2018",
-            "endDate": "2018",
+            "startDate": "2017",
             "company": {
                 "name": "Animath",
                 "website": "https://www.animath.fr"
             },
             "links": {}
+        },
+        {
+            "id": "paris-marathon-2024",
+            "title": "2024 Paris Marathon - From Zero to 42K",
+            "description": "Completed the 2024 Paris Marathon in 5h15min after transforming in 6 months from zero fitness following 6 years of heavy smoking.",
+            "location": "Paris, France",
+            "projectType": "competition",
+            "domainTags": ["athletics", "marathon",],
+            "techStack": [],
+            "startDate": "2024",
+            "links": {}
         }
+
     ]
 };

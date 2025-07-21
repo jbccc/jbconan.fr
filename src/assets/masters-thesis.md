@@ -1,42 +1,44 @@
 # Master's Thesis - CTML Berkeley
 
-## Research in Targeted Minimum Loss-based Estimators
+## Research in Mechanistic Interpretability for TMLE Neural Network Enhancement
 
 ### Overview
 
 This research project was conducted at the Center for Targeted Machine Learning and Causal Inference (CTML) at UC Berkeley under the supervision of Professor Mark van der Laan.
 
 The master thesis can be found at [here](https://arxiv.org/abs/2505.00555).
+
 ### Background
 
-Targeted Minimum Loss-based Estimation (TMLE) is a semiparametric, efficient substitution estimator that incorporates machine learning to minimize bias while preserving valid statistical inference.
+Targeted Minimum Loss-based Estimation (TMLE) is a semiparametric, efficient substitution estimator. This research explores the integration of mechanistic interpretability (mech interp) methods with TMLE frameworks using neural networks to enhance both data treatment and model decision interpretation.
 
 ### Research Focus
 
 The research focused on:
 
-- **Causal Inference Methods**: Advanced applications of TMLE in observational studies
-- **Statistical Learning**: Integration of machine learning algorithms with causal inference
-- **Efficiency Theory**: Theoretical foundations of efficient influence functions
-- **Real-world Applications**: Applying TMLE to complex healthcare datasets
+- **Mechanistic Interpretability**: Developing methods to understand neural network decision-making processes within TMLE frameworks
+- **Neural Network Enhancement**: Integrating deep learning architectures with traditional TMLE estimators
+- **Data Treatment Innovation**: Creating new approaches for data preprocessing and feature engineering through interpretable neural components
+- **Model Decision Interpretation**: Building tools to explain and validate neural network decisions in causal inference contexts
 
 ### Key Contributions
 
-- Developed novel applications of TMLE for time-to-event outcomes
-- Investigated robustness properties under model misspecification
-- Created computational implementations in R and Python
-- Collaborated with interdisciplinary teams on biomedical applications
+- Developed novel mechanistic interpretability techniques for TMLE-integrated neural networks
+- Created interpretable neural architectures that maintain TMLE's theoretical guarantees
+- Implemented new data treatment methodologies using interpretable deep learning components
+- Advanced model explainability in causal inference through mechanistic understanding of neural network behavior
 
 ### Technical Stack
 
-- **R**: Primary language for statistical computing and TMLE implementation
-- **Python**: Data preprocessing and machine learning components
-- **Causal Inference**: TMLE, G-computation, Inverse Probability Weighting
-- **Statistical Theory**: Efficiency theory, influence functions, asymptotic analysis
+- **Python**: Primary language for neural network implementation and mechanistic interpretability
+- **PyTorch/TensorFlow**: Deep learning frameworks for neural TMLE implementations
+- **R**: Statistical computing and traditional TMLE validation
+- **Mechanistic Interpretability**: Circuit analysis, feature visualization, activation patching
+- **Causal Inference**: TMLE with neural network enhancements
 
 ### Publications and Presentations
 
-Research findings were presented at multiple conferences and are being prepared for publication in peer-reviewed journals.
+Research findings on mechanistic interpretability applications in causal inference were presented at multiple conferences and are being prepared for publication in peer-reviewed journals.
 
 ### Location
 UC Berkeley, California

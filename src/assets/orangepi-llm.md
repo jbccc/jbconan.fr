@@ -1,68 +1,27 @@
-# OrangePI LLM Inference Setup
+# OrangePI LLM Inference API
 
-## Self-hosted Large Language Model Inference on ARM
+## Llama Inference on ARM Single-Board Computer
 
-### Project Overview
+### Overview
 
-This project involves setting up inference for Large Language Models on an ARM-based single-board computer, specifically using an Orange PI 5 device. I downloaded a pre-trained model, ran inference using rkllm, and served it through the network using FastAPI.
+Set up a Llama model inference API running on an Orange PI 5 with 32GB RAM using rkllm and FastAPI.
 
-### Motivation
+### Setup
 
-The goal was to create an affordable, energy-efficient setup for running LLM inference locally on edge hardware, avoiding cloud dependencies for personal use and experimentation.
-
-### Technical Architecture
-
-#### Hardware Setup
-- **Primary Node**: Orange PI 5 with 32GB RAM
-- **Storage**: NVMe SSD for fast model loading
-- **Networking**: Gigabit Ethernet for serving inferences
-
-#### Software Stack
-- **Base OS**: Ubuntu 22.04 LTS for ARM64
+- **Hardware**: Orange PI 5 (16GB RAM, NVMe SSD)
+- **Model**: Llama model optimized for ARM architecture
 - **Inference Engine**: rkllm for model execution
-- **Model Serving**: FastAPI-based server for network access
-- **Monitoring**: Basic system monitoring
+- **API Server**: FastAPI for network requests
 
-### Key Steps and Implementation
+### Implementation
 
-#### Model Acquisition
-- Downloaded a pre-trained LLM model suitable for ARM architecture
-
-#### Inference Setup
-- Installed and configured rkllm on the Orange PI 5
-- Loaded the downloaded model into rkllm
-- Ran initial inference tests to verify functionality
-
-#### Network Serving
-- Implemented a FastAPI server to expose the inference endpoint
-- Configured the server to handle requests over the local network
-- Added basic authentication and rate limiting
+1. Downloaded pre-trained Llama model compatible with rkllm
+2. Configured rkllm on Orange PI 5 running Ubuntu 22.04 ARM64
+3. Built FastAPI server to expose inference endpoints
+4. Deployed as always-on local inference service
 
 ### Results
 
-- Successfully ran inference on downloaded models
-- Achieved reasonable latency for local network requests
-- Power consumption: Low wattage suitable for always-on operation
-
-### Applications
-
-- Personal AI assistant for various tasks
-- Local development and testing of LLM applications
-- Educational tool for understanding LLM inference on edge devices
-
-### Technical Specifications
-
-- **Model Support**: Compatible with models optimized for rkllm
-- **Inference Speed**: Dependent on model size and hardware
-- **Concurrent Users**: Handles multiple requests via FastAPI
-
-### Future Improvements
-
-- Optimize for larger models
-- Add support for model fine-tuning
-- Improve monitoring and logging
-- Explore clustering multiple Orange PI devices
-
-### Repository
-
-The setup scripts, FastAPI server code, and configuration files are available in the project repository. 
+- Low-power, local LLM inference without cloud dependencies
+- Reasonable latency for personal use and experimentation
+- Network-accessible API for various applications 

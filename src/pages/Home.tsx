@@ -85,9 +85,7 @@ export const Home: React.FC = () => {
         <div className="text-lg leading-relaxed text-secondary-light dark:text-secondary-dark">
           <p className="mb-4">Hey, I'm JB — the mathematician who traded theorems for tech and turned machine learning into my playground. I've got a fresh MSc in Applied Mathematics from ETH Zurich under my belt (just graduated), specializing in stats and neural nets interpretability. I optimize for <strong>maximum impact with minimum BS</strong>, blending rigorous math with practical AI that actually works.</p>
 
-          <p className="mb-4">From co-founding VezmirAI (grew it to 100+ users, no big deal) to building data leakage prevention for LLMs and generating piano music with diffusion models, I've been knee-deep in AI that matters.</p>
-
-          <p className="mb-4">Startup founders: If you're building the next AI unicorn and need someone who can wrangle PyTorch, causal models, and a team — all while keeping things interpretable and reliable — I'm your guy. Let's chat before your competitor hires me. 😎</p>
+          <p className="mb-4">I'm a builder at heart — co-founded VezmirAI and scaled it to 100+ users by turning complex mathematical concepts into production-ready AI systems. Whether it's leading technical teams or building MVPs from scratch, I deliver results that matter. If you're a startup founder looking for someone who can build your AI vision from the ground up, let's chat before your competitor hires me. 😎</p>
         </div>
       </section>
 
