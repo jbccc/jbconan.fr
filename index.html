@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jean-Baptiste Conan</title>
+    <meta
+      name="description"
+      content="Jean-Baptiste Conan, founding engineer at vzlabs.ai. Mathematician by training."
+    />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JB Conan</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main>
+      <h1><span id="name">Jean-Baptiste Conan</span><span id="dot" aria-hidden="true"></span></h1>
+      <div id="bio">
+        <p>Founding engineer at <a href="https://vzlabs.ai" rel="noopener">vzlabs.ai</a>, where we build the infrastructure for agentic commerce.</p>
+        <p>Mathematician by training, with an MSc in Applied Mathematics from ETH Zurich and a thesis on neural network interpretability at UC Berkeley.</p>
+        <p>Before that, I co-founded VezmirAI.</p>
+      </div>
+      <p id="links">
+        <a href="https://x.com/conjibz" rel="me noopener" aria-label="@conjibz on X">X</a>
+        <span id="blog-off" aria-disabled="true">Blog</span>
+      </p>
+    </main>
   </body>
 </html>

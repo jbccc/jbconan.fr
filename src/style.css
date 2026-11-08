@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Heming";
+  src: url("/Heming-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --paper: #faf8f4;
+  --ink: #1c1a17;
+  --muted: #625c53;
+  --accent: #d9480f;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151412;
+    --ink: #f1ede6;
+    --muted: #a39c91;
+    --accent: #ff7a3d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Heming", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 34rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.1rem, 8vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+#bio p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.75rem 0 0;
+}
+
+#blog-off {
+  color: var(--muted);
+  opacity: 0.55;
+  cursor: default;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* Blog pages read from the top rather than sitting in the middle of the screen. */
+body.blog {
+  display: block;
+  padding: 64px 24px 96px;
+}
+
+body.blog main {
+  margin: 0 auto;
+}
+
+.blog-nav {
+  margin: 0 0 3rem;
+}
+
+.blog-empty,
+.post-date {
+  color: var(--muted);
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-list li {
+  margin: 0 0 1.5rem;
+}
+
+.post-list p {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+}
+
+.post-list .post-date {
+  font-size: 0.9rem;
+}
+
+article h1 {
+  margin-bottom: 0.5rem;
+}
+
+article .post-date {
+  margin: 0 0 2.5rem;
+}
+
+article h2,
+article h3 {
+  margin: 2.25rem 0 0.75rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+article blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+
+article code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+}
+
+article pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  line-height: 1.45;
+}
+
+/* The full stop after the name. */
+#dot {
+  display: inline-block;
+  width: 0.17em;
+  height: 0.17em;
+  margin-left: 0.07em;
+  border-radius: 50%;
+  background: var(--accent);
+}
